@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './helpers.css';
 //import base from '../base';
 import defaultBeer from '../defaultBeer';
 import Beer from './components/Beer';

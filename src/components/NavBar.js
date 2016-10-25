@@ -9,13 +9,13 @@ class NavBar extends React.Component {
 		const details = this.props.details;
 		return (
 			<div className="mynavbar row">
-				<div className="col-xs-1">
-					<img src="http://lorempixel.com/50/50" alt=""/>
+				<div className="col-xs-1 ">
+					<img className="logo"src="http://mastra.com.uy/wp-content/uploads/2014/02/mastra-logo1.png" alt=""/>
 				</div>
-				<div className="col-xs-10">
+				<div className="col-xs-10 separate-top-xs">
 						<span>{details.title}</span>
 				</div>
-				<div className="col-xs-1">
+				<div className="col-xs-1 separate-top-xs">
 					<span><i className="fa fa-chevron-down" aria-hidden="true"></i></span>
 				</div>
       </div>

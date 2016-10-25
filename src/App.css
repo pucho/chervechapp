@@ -1,10 +1,12 @@
 .App {
   text-align: center;
+  background-color: #f0eee1;
 }
 
 .mynavbar {
-  background: grey;
-  color: white;
+  background-image: url('http://mastra.com.uy/wp-content/uploads/2013/11/bg-header.jpg');
+  border-bottom: 2px solid #261b17;
+  color: #5d2a20;
   position: fixed;
   z-index: 100;
   border-radius: 0px;
@@ -20,19 +22,39 @@
   padding-top: 15px;
 }
 
+.mynavbar .logo {
+  max-height: 70px;
+}
+
 .beer-list {
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .menu-beer {
- border: 1px solid #111;
- margin-bottom: 5px;
- padding-bottom: 5px;
- padding-top: 5px;
+  box-shadow: 0px 1px 3px 1px rgba(112,112,112,0.46);
+  height: 300px;
+  border: 1px solid #111;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
-.price-card {
+.beer-image {
+  height: 285px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.beer-details {
+  height: 285px;
+}
+
+.price-card {
+  height: 285px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
