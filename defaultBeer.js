@@ -1,49 +1,48 @@
 // This is just some sample data so you don't have to think of your own!
 module.exports = {
-  fish1: {
-    name: 'Beer One',
-    image: 'http://i.istockimg.com/file_thumbview_approve/36248396/5/stock-photo-36248396-blackened-cajun-sea-bass.jpg',
-    desc: 'Everyones favorite white fish. We will cut it to the size you need and ship it.',
+  beer1: {
+    name: 'Belgian Blonde Ale',
+    image: 'http://mastra.com.uy/wp-content/uploads/2013/11/mastra-cervezas-belgian1.png',
+    desc: 'Cerveza rubia con buena claridad y una espuma cremosa blanca. Aroma dulce a  malta y perfume cítrico. Sabor fresco con dulzura en el paladar a miel o a caramelo. Tibieza de alcohol en el final.',
+    price: 110,
+    status: 'available'
+  },
+  beer2: {
+    name: 'Scottish Ale',
+    image: 'http://mastra.com.uy/wp-content/uploads/2013/11/mastra-cervezas-scottish1.png',
+    desc: 'Cerveza cobriza con reflejos rubíes de gran espuma tostada. Aroma profundo a malta, aparente a caramelo. Sabor a malta tostada (terroso o ahumado). Sabrosa, maltosa y usualmente dulce, pudiendo sugerir un postre.',
     price: 110,
     status: 'available'
   },
 
-  fish2: {
-    name: 'Beer One',
-    image: 'http://i.istockimg.com/file_thumbview_approve/32135274/5/stock-photo-32135274-cooked-lobster.jpg',
-    desc: 'Everyones favorite white fish. We will cut it to the size you need and ship it.',
+  beer3: {
+    name: 'American Stout',
+    image: 'http://mastra.com.uy/wp-content/uploads/2013/11/mastra-cervezas-american1.png',
+    desc: 'Cerveza azabache con espuma persistente de color tostado. Fuerte aroma a grano tostado. Sabor a maltas chocolate pareciendo café o chocolate oscuro. Amargor alto y sabor a lúpulo bajo. Cuerpo pleno cremoso con una pizca de astringencia.',
     price: 110,
     status: 'available'
   },
 
-  fish3: {
-    name: 'Beer One',
-    image: 'http://i.istockimg.com/file_thumbview_approve/58624176/5/stock-photo-58624176-scallops-on-black-stone-plate.jpg',
-    desc: 'Everyones favorite white fish. We will cut it to the size you need and ship it.',
+  beer4: {
+    name: 'Witbier',
+    image: 'http://mastra.com.uy/wp-content/uploads/2013/11/mastra-cervezas-verano-witbier.png',
+    desc: 'Cerveza Blanca con aroma a naranja. Sabor fresco y final especiado con comino y cilantro.',
     price: 110,
     status: 'available'
   },
 
-  fish4: {
-    name: 'Beer One',
-    image: 'http://i.istockimg.com/file_thumbview_approve/12556651/5/stock-photo-12556651-mahimahi.jpg',
-    desc: 'Everyones favorite white fish. We will cut it to the size you need and ship it.',
+  beer5: {
+    name: 'English IPA',
+    image: 'http://mastra.com.uy/wp-content/uploads/2013/11/mastra-cervezas-otono-scottish.png',
+    desc: 'Cerveza rojiza con discreta turbiedad y espuma blanca. Aroma vegetal con perfume a pino. Sabor fresco con mucho amargor en el paladar. Cuerpo pleno con un final astringente.',
     price: 110,
     status: 'available'
   },
 
-  fish5: {
-    name: 'Beer One',
-    image: 'http://i.istockimg.com/file_thumbview_approve/18294110/5/stock-photo-18294110-king-crab-legs.jpg',
-    desc: 'Everyones favorite white fish. We will cut it to the size you need and ship it.',
-    price: 110,
-    status: 'available'
-  },
-
-  fish6: {
-    name: 'Beer One',
-    image: 'http://i.istockimg.com/file_thumbview_approve/56241842/5/stock-photo-56241842-salmon-fish.jpg',
-    desc: 'Everyones favorite white fish. We will cut it to the size you need and ship it.',
+  beer6: {
+    name: 'American IPA',
+    image: 'http://mastra.com.uy/wp-content/uploads/2013/11/mastra-cervezas-otono-scottish.png',
+    desc: 'Cerveza ámbar de espuma blanca. Aroma frutal con perfume a frutas tropicales. Sabor fresco con amargor en el paladar. Cuerpo medio con un final fresco.',
     price: 110,
     status: 'available'
   }

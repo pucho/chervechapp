@@ -1,19 +1,32 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from './components/Header'
+//import base from '../base';
+import defaultBeer from '../defaultBeer';
+import Beer from './components/Beer';
+import NavBar from './components/NavBar';
+
 
 class App extends Component {
   render() {
-    var details = {
-      name: 'Bar Bar',
-      logoUrl: 'http://lorempixel.com/100/100'
-    }
+    const beer = defaultBeer;
+    const navbar = {
+      title: 'Welcome to La Choperia',
+      logo: 'http://lorempixel.com/50/50'
+    };
     return (
-      <div className="App container">
-        <Header details={details}></Header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="App container-fluid">
+        <NavBar details={navbar}></NavBar>
+        <div className="col-xs-12 beer-list">
+          {
+						Object
+						.keys(beer)
+						.map(key => <Beer
+							key={key}
+							index={key}
+							details={beer[key]}
+						/>)
+					}
+        </div>
       </div>
     );
   }

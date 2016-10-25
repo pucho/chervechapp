@@ -4,7 +4,7 @@ class Header extends Component {
   render () {
     const details = this.props.details;
     return (
-      <div className="header">
+      <div className="header col-xs-12">
         <img src={details.logoUrl} alt="barLogo" className="img"/>
         Welcome to {details.name}!
       </div>

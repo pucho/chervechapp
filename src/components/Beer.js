@@ -3,24 +3,22 @@ import React from 'react';
 class Beer extends React.Component {
 	render() {
 		const details = this.props.details;
-		const isAvailable = details.status === 'available';
-		const buttonText = isAvailable ? 'Add To Order' : 'Sold Out!';
-
 		return (
-			<li className="menu-beer">
-				<img src={details.image} alt={details.name} />
-				<h3 className="beer-name">
-					{details.name}
+			<div className="menu-beer col-xs-12">
+				<div className="col-xs-2">
+					<img src={details.image} alt={details.name} className="img-responsive" />
+				</div>
+				<div className="col-xs-8">
+					<h3 className="beer-name">
+						{details.name}
+					</h3>
+					<p>{details.desc}</p>
+				</div>
+				<div className="col-xs-2 price-card">
 					<span className="price">{details.price}</span>
-				</h3>
-				<p>{details.desc}</p>
-				<button
-					disabled={!isAvailable}
-					onClick={ () => this.props.addToOrder(this.props.index)}
-					>
-					{buttonText}
-				</button>
-			</li>
+					<button type="button" class="btn btn-default">Default</button>
+				</div>
+			</div>
 		)
 	}
 }
