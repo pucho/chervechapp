@@ -11,7 +11,7 @@ class App extends Component {
     super();
     this.addToOrder = this.addToOrder.bind(this);
     this.removeFromOrder = this.removeFromOrder.bind(this);
-
+    this.showOrder = this.showOrder.bind(this);
 
     this.state = {
 			items: {},
@@ -40,6 +40,10 @@ class App extends Component {
 		this.setState({ order });
   }
 
+  showOrder() {
+    console.log('should show panel');
+  }
+
   render() {
     const beer = defaultBeer;
     const navbar = {
@@ -48,7 +52,7 @@ class App extends Component {
     };
     return (
       <div className="App container-fluid">
-        <NavBar details={navbar}></NavBar>
+        <NavBar details={navbar} showOrder={this.showOrder}></NavBar>
         <div className="col-xs-12 beer-list">
           {
 						Object

@@ -16,7 +16,11 @@ class NavBar extends React.Component {
 						<span>{details.title}</span>
 				</div>
 				<div className="col-xs-1 separate-top-xs">
-					<span><i className="fa fa-chevron-down" aria-hidden="true"></i></span>
+					<span>
+						<a onClick={ () => this.props.showOrder()}>
+							<i className="fa fa-chevron-down" aria-hidden="true"></i>
+						</a>
+					</span>
 				</div>
       </div>
 		)

@@ -5,6 +5,16 @@
   justify-content: center;
 }
 
+.fa-chevron-up {
+  cursor: pointer;
+  color: black;
+}
+
+.fa-chevron-down {
+  cursor: pointer;
+  color: black;
+}
+
 .separate-top-xs {
   margin-top: 10px;
 }

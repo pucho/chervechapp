@@ -3,6 +3,7 @@
 .App {
   text-align: center;
   background-color: #f0eee1;
+  min-width: 300px;
 }
 
 .mynavbar {
@@ -15,6 +16,7 @@
   width: 100%;
   max-height: 70px;
   min-height: 50px;
+  min-width: 300px;
 }
 
 .mynavbar span {
