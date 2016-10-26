@@ -10,6 +10,7 @@ class App extends Component {
   constructor() {
     super();
     this.addToOrder = this.addToOrder.bind(this);
+    this.removeFromOrder = this.removeFromOrder.bind(this);
 
 
     this.state = {
@@ -28,8 +29,15 @@ class App extends Component {
   }
 
   removeFromOrder(index){
-    console.log('button working...maybe');
-    console.log(index);
+    //copy state
+    const order = {...this.state.order};
+    //delete item from list or decrease number of items
+    if(order[index] <= 0 || !order[index]) {
+      delete order[index];
+    } else {
+      order[index] -= 1;
+    }
+		this.setState({ order });
   }
 
   render() {
@@ -50,6 +58,7 @@ class App extends Component {
 							index={key}
 							details={beer[key]}
               addToOrder={this.addToOrder}
+              removeFromOrder={this.removeFromOrder}
 						/>)
 					}
         </div>

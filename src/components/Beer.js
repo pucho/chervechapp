@@ -15,12 +15,18 @@ class Beer extends React.Component {
 					<p>{details.desc}</p>
 				</div>
 				<div className="col-xs-2 price-card">
-					<span className="price">${details.price}</span>
 					<button
 						type="button"
 						className="btn btn-default"
 						onClick={ () => this.props.addToOrder(this.props.index)}
 						>Add to Order
+					</button>
+					<span className="price">${details.price}</span>
+					<button
+						type="button"
+						className="btn btn-default"
+						onClick={ () => this.props.removeFromOrder(this.props.index)}
+						>Remove
 					</button>
 				</div>
 			</div>
