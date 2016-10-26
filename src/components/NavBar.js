@@ -10,7 +10,7 @@ class NavBar extends React.Component {
 		return (
 			<div className="mynavbar row">
 				<div className="col-xs-1 ">
-					<img className="logo"src="http://mastra.com.uy/wp-content/uploads/2014/02/mastra-logo1.png" alt=""/>
+					<img className="logo"src={details.logo} alt=""/>
 				</div>
 				<div className="col-xs-10 separate-top-xs">
 						<span>{details.title}</span>

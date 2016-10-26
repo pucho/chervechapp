@@ -16,7 +16,12 @@ class Beer extends React.Component {
 				</div>
 				<div className="col-xs-2 price-card">
 					<span className="price">${details.price}</span>
-					<button type="button" className="btn btn-default">Default</button>
+					<button
+						type="button"
+						className="btn btn-default"
+						onClick={ () => this.props.addToOrder(this.props.index)}
+						>Add to Order
+					</button>
 				</div>
 			</div>
 		)

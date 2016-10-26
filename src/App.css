@@ -1,3 +1,5 @@
+@import './helpers.css';
+
 .App {
   text-align: center;
   background-color: #f0eee1;
@@ -32,6 +34,7 @@
 
 .menu-beer {
   box-shadow: 0px 1px 3px 1px rgba(112,112,112,0.46);
+  background-color: rgba(0,0,0,0.1);
   height: 300px;
   border: 1px solid #111;
   margin-bottom: 5px;
@@ -52,6 +55,7 @@
 }
 
 .price-card {
+  font-size: 25px;
   height: 285px;
   display: flex;
   flex-direction: column;
