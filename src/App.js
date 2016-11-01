@@ -4,6 +4,7 @@ import './App.css';
 import defaultBeer from '../defaultBeer';
 import Beer from './components/Beer';
 import NavBar from './components/NavBar';
+import Sidebar from 'react-sidebar';
 
 
 class App extends Component {
@@ -17,6 +18,14 @@ class App extends Component {
 			items: {},
 			order: {}
 		};
+  }
+
+  getInitialState() {
+    return {sidebarOpen: true};
+  }
+
+  onSetSidebarOpen() {
+    this.setState({sidebarOpen: true});
   }
 
   addToOrder(index) {
@@ -44,14 +53,25 @@ class App extends Component {
     console.log('should show panel');
   }
 
+
+
   render() {
     const beer = defaultBeer;
     const navbar = {
       title: 'Welcome to La Choperia',
       logo: 'http://mastra.com.uy/wp-content/uploads/2014/02/mastra-logo1.png'
     };
+    var sidebarContent = <b>Sidebar content</b>;
     return (
       <div className="App container-fluid">
+        <Sidebar
+          docked={true}
+          sidebarClassName={'sidebar'}
+          sidebar={sidebarContent}
+          open={this.state.sidebarOpen}
+          onSetOpen={this.onSetSidebarOpen}>
+          <b>Main Content</b>
+        </Sidebar>
         <NavBar details={navbar} showOrder={this.showOrder}></NavBar>
         <div className="col-xs-12 beer-list">
           {
